@@ -11,7 +11,6 @@ class Specinfra::Command::Windows::Base::File < Specinfra::Command::Windows::Bas
     end
   end
 end
-
 # class Specinfra::Command::Base::File
 class Specinfra::Command::Base::File < Specinfra::Command::Base
   class << self
