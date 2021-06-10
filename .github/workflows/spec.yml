@@ -34,6 +34,8 @@ jobs:
         include:
           - puppet_version: '~> 5.5.0'
             ruby_version: '2.5'
+          - puppet_version: '~> 5.5.0'
+            ruby_version: '2.3'
 
     env:
       BUILDEVENT_FILE: '../buildevents.txt'

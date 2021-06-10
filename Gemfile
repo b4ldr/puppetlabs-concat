@@ -15,10 +15,10 @@ end
 
 ruby_version_segments = Gem::Version.new(RUBY_VERSION.dup).segments
 minor_version = ruby_version_segments[0..1].join('.')
-puppet_module_posix_version = if Gem::Requirement.create('~> 2.5.0').satisfied_by?(Gem::Version.new(RUBY_VERSION.dup))
-                                '0.0'
-                              else
+puppet_module_posix_version = if Gem::Requirement.create('~> 2.7.0').satisfied_by?(Gem::Version.new(RUBY_VERSION.dup))
                                 '1.0'
+                              else
+                                '0.0'
                               end
 
 group :development do
